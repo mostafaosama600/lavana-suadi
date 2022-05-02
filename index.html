@@ -1,0 +1,4332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body onresize="check_screen()">
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="temp-mobile-nav">
+        <select class="toggleable dropdown">
+            <option>عربى</option>
+            <option>En</option>
+        </select>
+        <div class="country">
+            <select class="toggleable dropdown">
+                <option>تسليم لـ جدة</option>
+                <option>En</option>
+            </select>
+            <img class="flag toggleable dropdown" src="./images/nav/SA.svg"/>
+        </div>
+    </div>
+
+    <nav>
+        <div class="badge-btns">
+            <img class="badge-btn toggleable" src="./images/nav/Google Play Badge.svg"/>
+            <img class="badge-btn toggleable" src="./images/nav/App Store Badge.svg"/>
+        </div>
+        <select class="toggleable">
+            <option>عربى</option>
+            <option>En</option>
+        </select>
+        <div class="search toggleable">
+            <input type="text" placeholder="عن ماذا تبحث؟"/>
+            <img src="./images/nav/search.svg"/>
+        </div>
+        <div class="country">
+            <select class="toggleable">
+                <option>تسليم لـ جدة</option>
+                <option>En</option>
+            </select>
+            <img class="flag toggleable" src="./images/nav/SA.svg"/>
+        </div>
+        <div class="mobile-nav">
+            <div class="toggler">
+                <button onclick="toggle()" class="nav-toggler fa fa-bars"></button>
+            </div>
+            <img class="logo" src="./images/nav/logo (1) 2.png"/>
+        </div>
+    </nav>
+
+    <div class="second-nav">
+        <div class="items">
+            <div class="item">
+                <a href="#">
+                    <img src="./images/second-nav/cart.svg"/>
+                    <p>عربة التسوق</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="./images/second-nav/fav.svg"/>
+                    <p>المفضلة</p>
+                </a>
+            </div>
+            <div class="item" onmouseover="showMenu()" onmouseout="hideMenu()">
+                <a href="#">
+                    <img src="./images/second-nav/user.svg"/>
+                    <p>تسجيل الدخول</p>
+                </a>
+                <div class="loginMenu">
+                    <a href="#">
+                        A
+                    </a>
+                    <a href="#">
+                        B
+                    </a>
+                    <a href="#">
+                        C
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <a class="tab" href="#">كن بائعا معنا</a>
+            <a class="tab" href="#">اجهزة منزلية</a>
+            <a class="tab" href="#">اطفال</a>
+            <a class="tab" href="#">ملابس نسائية</a>
+            <a class="tab" href="#">ملابس رجالية</a>
+            <a class="tab" href="#">الالكترونيات</a>
+            <span></span>
+            <a class="menu">
+                تسوق حسب الاقسام
+                <i class="fa fa-angle-down"></i>
+                <div>
+                    <p>A</p>
+                    <p>B</p>
+                    <p>C</p>
+                    <div class="menu2">
+                        Hover Me
+                        <i class="fa fa-angle-left"></i>
+                        <div class="subMenu">
+                            <p>1</p>
+                            <p>2</p>
+                            <div class="menu3">
+                                3
+                                <i class="fa fa-angle-left"></i>
+                                <div class="subMenu2">
+                                    <p>a</p>
+                                    <p>b</p>
+                                    <p>c</p>
+                                    <p>d</p>
+                                </div>
+                            </div>
+                            <p>4</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <p>E</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="banner" style="margin: 0 0 -6px 0;">
+        <img src="./images/banner/Group 186.png"/>
+    </div>
+
+    <div class="banner slideshow">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+                <div class="swiper-slide slide3">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+                <div class="swiper-slide slide4">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="categories row">
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_FoeIOgztCXo.png"/>
+                <p>ادوات تجميل</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_GLg0z5z8EQU.png"/>
+                <p>ملابس نسائية</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_kLIZQ8iUdzA.png"/>
+                <p>ملابس رجالية</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_PeX3e51pHIE.png"/>
+                <p>العاب</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_FoeIOgztCXo.png"/>
+                <p>ادوات تجميل</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_GLg0z5z8EQU.png"/>
+                <p>ملابس نسائية</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_kLIZQ8iUdzA.png"/>
+                <p>ملابس رجالية</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_PeX3e51pHIE.png"/>
+                <p>العاب</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_iZVrfElG1t0.png"/>
+                <p>ساعات ذكية</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_gz9njd0zYbQ.png"/>
+                <p>الكترونيات</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_yFnX8DaC3UM.png"/>
+                <p>كاميرات</p>
+            </a>
+        </div>
+        <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
+            <a href="#">
+                <img src="./images/categories/unsplash_xsGxhtAsfSA.png"/>
+                <p>موبايلات</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="sales row">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-6">
+            <div class="zoom-in">
+                <img class="changeable-border" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>إشترى واحد واحصلى على الاخر مجانا</p>
+                    <span>
+                        <a href="#">
+                        ادوات تجميل
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-6">
+            <div class="zoom-in">
+                <img class="changeable-border" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>تمتع بخصم 60% عند شرائك اكتر من منتج</p>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-6">
+            <div class="zoom-in">
+                <img class="changeable-border" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>إشترى واحد واحصلى على الاخر مجانا</p>
+                    <span>
+                        <a href="#">
+                        ادوات تجميل
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-6">
+            <div class="zoom-in">
+                <img class="changeable-border" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>تمتع بخصم 60% عند شرائك اكتر من منتج</p>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="countdown">
+        <div class="timer">
+            <div>
+                <p id="days">2</p>
+                <span>ايام</span>
+            </div>
+            <span> : </span>
+            <div>
+                <p id="hours">12</p>
+                <span>ساعات</span>
+            </div>
+            <span> : </span>
+            <div>
+                <p id="minutes">3</p>
+                <span>دقائق</span>
+            </div>
+            <span> : </span>
+            <div>
+                <p id="seconds">15</p>
+                <span>ثوانى</span>
+            </div>
+        </div>
+        <div class="title">
+            <img src="./images/countdown/moon.svg">
+            <p>عروض شهر رمضان</p>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="./images/banner/Group 208.png"/>
+    </div>
+
+    <div class="just-text">
+        <p>عروض خاصة من اجلك</p>
+        <p>
+            كل
+            <span>خصم</span>
+            نقوم بتقديمه هو الافضل فى السوق!
+        </p>
+        <div>
+            <p>
+                تخفيضات ل
+                40%
+                اغتنم الفرصة الان
+            </p>
+        </div>
+    </div>
+
+    <div class="today-sales">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>عروض 
+                <span>اليوم</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales-24h">
+        <div class="title">
+            <img src="./images/countdown/moon.svg">
+            <p>
+                عروض سوبر لـ 24 ساعه فقط
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>عروض 
+                <span>الالكترونيات</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ramadan-sales">
+        <div class="headers">
+            <a href="#" class="blue-btn">تسوق الان</a>
+            <p>منتجات شهر 
+                <span>رمضان</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            سكتشرز
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            روتين وتجميل
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            ألعاب وترفيه
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            عبادة وروحانيات
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            الإفطار والسحور 
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales sales2 row">
+        <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-6">
+            <div>
+                <img class="zoom-out" src="./images/sales2/Group 294.png"/>
+                <div class="text">
+                    <p>
+                        الشحن مجانى على منتجات بأكتر من 300 ريال
+                    </p>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-6">
+            <div>
+                <img class="zoom-out" src="./images/sales2/Group 287.png"/>
+                <div class="text">
+                    <p>
+                        اشترى واحد تحصلى على الاخر مجانا
+                    </p>
+                    <span>
+                        <a href="#">
+                            ادوات تجميل
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-6">
+            <div>
+                <img class="zoom-out" src="./images/sales2/Group 293.png"/>
+                <div class="text">
+                    <p>
+                        خصم 20% عند الاشتراك فى القائمة البريدية
+                    </p>
+                    <span>
+                        <a href="#">
+                            المنزل وادوات البيت
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="women-sales">
+        <div class="title">
+            <img src="./images/countdown/moon.svg">
+            <p>
+                تألقى طول شهر رمضان
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
+                        <p>
+                            أزياء نسائية
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس رياضية
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            أزياء رمضان
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
+                        <p>
+                            أدوات تجميل
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                ازياء نسائية
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">شاهدى كل العروض</a>
+            <p>
+                خصم
+                <span>40 %</span>
+                على الازياء النسائية
+            </p>
+        </div>
+    </div>
+    <div class="ramadan-sales sale40">
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes red-section">
+        <div class="headers">
+            <a href="#" class="white-btn">تسوق الان</a>
+            <p>
+                %
+                تخفيضات حتى
+                40
+            </p>
+        </div>
+        <p class="red-section-info">
+            عروض لمدة
+            24
+            ساعة تصفح المنتجات الان قبل نفاذ الكمية
+        </p>
+    </div>
+    <div class="ramadan-sales sale40 red-section">
+        <div class="row">
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="women-sales">
+        <div class="title">
+            <img src="./images/countdown/moon.svg">
+            <p>
+                تألق طول شهر رمضان
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
+                        <p>
+                            أزياء رجالية
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس رياضية
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            أزياء رمضان
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
+                        <p>
+                            سنيكرز
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                ازياء رجالية
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">شاهد كل العروض</a>
+            <p>
+                خصم
+                <span>40 %</span>
+                على الازياء الرجالية
+            </p>
+        </div>
+    </div>
+    <div class="ramadan-sales sale40">
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales-24h house-sales">
+        <div class="headers">
+            <a href="#" class="blue-btn">شاهد كل العروض</a>
+            <div class="title">
+                <img src="./images/countdown/moon.svg">
+                <p>
+                    عروض على إحتياجات البيت لشهر رمضان
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                عروض البيت و المطبخ
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                عروض الأجهزة المنزلية
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales sales2 row">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-6">
+            <div>
+                <img class="changeable-border" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>
+                        الشحن مجانى على منتجات بأكتر من 300 ريال
+                    </p>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-6">
+            <div>
+                <img class="changeable-border" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>
+                        اشترى واحد تحصلى على الاخر مجانا
+                    </p>
+                    <span>
+                        <a href="#">
+                            ادوات تجميل
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col col-lg-6 col-md-12 col-sm-12">
+            <div>
+                <img class="changeable-border changeable-border2" src="./images/noBorderRadius.jpg"/>
+                <div class="text">
+                    <p>
+                        خصم 20% عند الاشتراك فى القائمة البريدية
+                    </p>
+                    <span>
+                        <a href="#">
+                            المنزل وادوات البيت
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sales-24h house-sales electronics">
+        <div class="headers">
+            <a href="#" class="red-btn">شاهد كل العروض</a>
+            <div class="title">
+                <img src="./images/countdown/moon.svg">
+                <p>
+                    عروض الالكترونيات لشهر رمضان
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                عروض
+                <span>الكمبيوتر</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                عروض
+                <span>الموبايل</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="./images/banner/Group 285.png"/>
+    </div>
+
+    <div class="sales-24h house-sales electronics">
+        <div class="headers">
+            <a href="#" class="red-btn">شاهد كل العروض</a>
+            <div class="title">
+                <img src="./images/countdown/moon.svg">
+                <p>
+                    عروض الميكب والتجميل لشهر رمضان
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="col">
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                عروض
+                <span>العطور</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="electronics-sales women-clothes">
+        <div class="headers">
+            <a href="#" class="red-btn">تسوق الان</a>
+            <p>
+                عروض
+                <span>ادوات التجميل</span>
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
+                <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
+                <div>
+                    <div class="options">
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
+                        <span></span>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
+                    </div>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <p>
+                        حذاء نسائي للاناقة والراحة
+                    </p>
+                    <div class="rating">
+                        <div class="text">
+                            تقييم
+                            420
+                            عميل
+                        </div>
+                        <div class="stars">
+                            <span>(5.0)</span>
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                            <img src="./images/today-sales/star.svg">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>60 SAR</p>
+                        <span>60 SAR</span>
+                        <a>
+                            شحن سريع
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="women-sales best-brands">
+        <div class="title">
+            <img src="./images/countdown/moon.svg">
+            <p>
+                افضل العلامات التجارية
+            </p>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
+                <div>
+                    <img class="zoom-in" src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
+                <div>
+                    <img class="zoom-in" src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
+                <div>
+                    <img class="zoom-in" src="./images/brands/1280px-H&M-Logo 1.png"/>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
+                <div>
+                    <img class="zoom-in" src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
+                <div>
+                    <img class="zoom-in" src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-banner">
+        <div class="row">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-6 col-sm-12">
+                <div class="scaleImg">
+                    <img src="./images/footer/Phone.svg"/>
+                    <p>عبر الهاتف</p>
+                    <p>050000000</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <div class="scaleImg">
+                    <img src="./images/footer/Mail.svg"/>
+                    <p>البريد الالكترونى</p>
+                    <p>support@lavana.com</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <div class="scaleImg">
+                    <img src="./images/footer/Smile.svg"/>
+                    <p>مركز المساعدة</p>
+                    <p>help.lavana.com</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="text">
+                    <p>
+                        نحن دائما جاهزون لمساعدتك
+                    </p>
+                    <p>
+                        تواصل معنا عبر قنوات الدعم التالية
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-contact">
+        <div class="row">
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <p>تواصل معنا</p>
+                    <p class="toLeft">
+                        الرياض . المملكة العربية السعودية
+                        <img class="contact-icons" src="./images/contact-icons/mark.svg"/>
+                    </p>
+                    <p class="toLeft">اتصل بنا الان :
+                        04700000
+                        <img class="contact-icons" src="./images/contact-icons/phone.svg"/>
+                    </p>
+                    <p class="toLeft">
+                        Support@Taswaq.com :
+                        راسلنا الان
+                        <img class="contact-icons" src="./images/contact-icons/msg.svg"/>
+                    </p>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <p>حسابى</p>
+                    <p class="toLeft">
+                        <a href="#">
+                            صفحتك الشخصية
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            عربة التسوق
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            تتبع طلبيتك
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            اعدادات الدفع الالكترونى
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            اسالة و اجوبة
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <p>من نحن</p>
+                    <p class="toLeft">
+                        <a href="#">
+                            تعرف علينا
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            تواصل معنا
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            الشروط و الاحكام
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            سياسة الارجاع و التبديل
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            معلومات الشحن و الارسال
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div class="text">
+                    <img src="./images/nav/logo (1) 2.png"/>
+                    <p class="toLeft">
+                        افضل متجر عربى
+                    </p>
+                    <p class="toLeft">
+                        نقدم افضل المنتجات باعلى جودة
+                    </p>
+                    <div class="icons">
+                        
+                        <a href="#">
+                            <i style="--color:#f4c20d" class="fa fa-snapchat"></i>
+                        </a>
+                        <a href="#">
+                            <i style="--color:#00acee" class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i style="--color:#8a3ab9" class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i style="--color:#3b5998" class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة
+        2022
+        &copy;
+        صنع ب
+        &hearts;	
+        بواسطة
+        Lavana
+    </footer>
+
+    <div class="help">
+        <a href="#">
+            <img src="./images/help/Group 291.svg"/>
+        </a>
+        <div>
+            <p>
+                كيف يمكننى مساعدتك ؟
+            </p>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/cart.svg"/>
+            عربة التسوق
+        </a>
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/bars.svg"/>
+            الاقسام
+        </a>
+        <a class="active" href="#">
+            <img src="./images/bottom-tabs/home.svg"/>
+            الرئيسية
+        </a>
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/account.svg"/>
+            حسابى
+        </a>
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/sales.svg"/>
+            العروض
+        </a>
+    </div>
+
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/282bcf757e.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+<script src="./script.js"></script>
+</html>

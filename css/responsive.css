@@ -1,0 +1,425 @@
+.toggler{
+    display: none;
+}
+.toggler button{
+    width: 50px;
+    height: 40px;
+    font-size: 22px;
+    color: #B92728;
+    background-color: #fff;
+    border: 2px solid #B92728;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.toggler button:active{
+    color: #fff;
+    background-color: #B92728;
+    border: 2px solid #B92728;
+}
+
+@media screen and (max-width: 1225px) {
+    nav *{
+        order: 2;
+    }
+    .mobile-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        order: 1;
+    }
+    .badge-btns{
+        width: fit-content;
+    }
+    nav{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .toggler{
+        display: block;
+    }
+    nav > select:nth-of-type(1){
+        margin: 20px 0 0 20px;
+    }
+    .toggleable{
+        padding: 0;
+        margin: 20px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        display: none;
+    }
+    .second-nav{
+        justify-content: center;
+        padding: 10px 4px;
+    }
+    .ads span{
+        font-size: 24px;
+        text-align: center;
+    }
+    .sales.row div div .text p{
+        font-size: 20px;
+    }
+    .sales.row div div .text span{
+        font-size: 18px;
+    }
+
+    .countdown{
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 20px 10px 0 10px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .countdown .timer > span{
+        margin: 0 6px 0 4px;
+        font-size: 40px;
+        line-height: 22px;
+    }
+    .countdown .timer > div p{
+        font-size: 18px;
+        width: 36px;
+        height: 30px;
+        line-height: 20px;
+    }
+    .countdown .timer > div span{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .countdown .title{
+        padding: 12px 40px;
+        margin: 20px 8px 10px 8px;
+    }
+    .countdown .title img{
+        width: 24px;
+    }
+    .countdown .title p{
+        font-size: 20px;
+        margin: 0 0 0 12px;
+    }
+
+    .just-text > p:nth-of-type(1){
+        font-size: 24px;
+        line-height: 30px;    
+    }
+    .just-text > p:nth-of-type(2){
+        font-size: 26px;
+        line-height: 34px;
+        margin: 8px 0;
+    }
+    .just-text div{
+        width: 96%;
+        margin: 20px auto;
+    }
+    .just-text > div p{
+        font-size: 24px;
+        padding: 8px;
+        line-height: 32px;
+    }
+
+    .sales-24h .title{
+        padding: 12px 30px;
+        margin: 20px auto 10px auto;
+    }
+    .sales-24h .title img{
+        width: 24px;
+    }
+    .sales-24h .title p{
+        font-size: 18px;
+        margin: 8px 0 0 12px;
+    }
+    .sales-24h .row .col > div div span{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .electronics-sales .row .col > div{
+        padding: 6px 12px;
+    }
+    .electronics-sales .row .col > div > p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .electronics-sales .row .col > div .rating{
+        padding: 8px 0 12px 0;
+    }
+    .electronics-sales .row .col > div .rating .stars img{
+        width: 16px;
+    }
+    .electronics-sales .row .col > div .rating .stars span{
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 4px 0 0;
+    }
+    .electronics-sales .row .col > div .rating .text{
+        font-size: 14px;
+        line-height: 18px;
+        order: 0;
+        margin: 8px 0 0 0;
+    }
+    .electronics-sales .row .col > div .card-footer{
+        margin: 0 0 6px 0;
+    }
+    .electronics-sales .row .col > div .card-footer p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .electronics-sales .row .col > div .card-footer span{
+        font-size: 14px;
+        line-height: 18px;
+        margin: 4px 0;
+    }
+    .electronics-sales .row .col > div .card-footer a{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 6px 12px;
+    }
+
+    .sales2 .col > div{
+        align-items: center;
+    }
+    .sales2 img{
+        width: 120px;
+        height: 120px;
+    }
+    .sales2 .col div .text{
+        padding: 8px;
+    }
+    .sales2.row .col div .text p{
+        font-size: 18px;
+    }
+    .sales2.row .col div .text span{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .women-sales .title{
+        padding: 12px 30px;
+        margin: 20px auto 10px auto;
+    }
+    .women-sales .title img{
+        width: 24px;
+    }
+    .women-sales .title p{
+        font-size: 18px;
+        margin: 8px 0 0 12px;
+    }
+
+    .women-clothes .headers{
+        text-align: center;
+    }
+    .women-clothes .headers a{
+        text-align: center;
+    }
+    .women-clothes .headers p{
+        font-size: 18px;
+    }
+    .ramadan-sales.sale40 .row .col div p{
+        font-size: 20px;
+        padding: 10px 2px;
+    }
+    
+    .ramadan-sales.sale40.red-section .row .col p{
+        font-size: 16px;
+    }
+
+    .house-sales .headers{
+        flex-direction: column;
+        padding: 20px 0;
+        width: calc(100% - 40px);
+    }
+    .house-sales .headers a{
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 14px;
+    }
+    .house-sales .headers .title{
+        padding: 12px 30px;
+        margin: 20px auto 10px auto;
+    }
+    .house-sales .headers .title img{
+        width: 20px;
+    }
+    .house-sales .headers .title p{
+        font-size: 16px;
+        margin: 8px 0 0 12px;
+    }
+
+    .footer-banner{
+        padding: 36px 6px;
+    }
+    .footer-banner .col > div:not(.text) p:nth-of-type(1){
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .footer-banner .col > div:not(.text) p:nth-of-type(2){
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0 0 20px 0;
+    }
+    .footer-banner .col > div.text{
+        padding: 4px 20px 4px 4px;
+    }
+    .footer-banner .col > div.text p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .footer-banner .col > div.text p:nth-of-type(2){
+        padding: 0 20px 0 0;
+    }
+
+    .badge{
+        width: 80px !important;
+    }
+
+    .help{
+        bottom: 8px;
+        right: 12px;
+    }
+    .help img{
+        width: 68px;
+    }
+}
+
+.temp-mobile-nav{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .bottom-nav{
+        display: flex;
+    }
+    .help{
+        display: none;
+    }
+    .second-nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        width: fit-content;
+    }
+    nav{
+        padding: 0;
+        flex-direction: row;
+        position: sticky !important;
+        top: 0;
+        z-index: 3;
+    }
+    .toggler{
+        display: none;
+    }
+    .toggleable{
+        display: none;
+    }
+    .search.toggleable{
+        display: block;
+        width: calc(100% - 66px);
+        order: 1;
+        margin: 10px 0 10px 10px;
+    }
+    .temp-mobile-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+        background-color: #B92728;
+    }
+    .temp-mobile-nav .dropdown{
+        display: block;
+        margin: 4px;
+        background-color: #B92728;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    .temp-mobile-nav .country{
+        display: flex;
+        align-items: center;
+    }
+    footer{
+        padding: 20px 10px 100px 10px;
+    }
+
+    .sales-24h .row .col a > div > div p{
+        font-size: 22px;
+    }
+    .sales-24h .row .col a > div > div span{
+        font-size: 22px;
+    }
+
+    .ramadan-sales .row .col p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .sales2 .col div{
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    .women-sales .row .col p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .women-clothes .headers{
+        flex-direction: column;
+    }
+    .women-clothes .headers a{
+        margin: 10px 0 0 0;
+        order: 1;
+    }
+    .sale40 .row .col div p{
+        padding: 4px !important;
+        font-size: 20px !important;
+        line-height: 24px;
+    }
+
+    .red-section .row .col > a > div p{
+        font-size: 16px !important;
+        line-height: 22px;
+    }
+
+    .title p{
+        max-width: calc(100% - 32px) !important;
+        font-size: 16px !important;
+        margin: 0 !important;
+    }
+
+    .sales{
+        padding: 16px 6px;
+    }
+    .sales .col{
+        padding: 6px;
+    }
+    .sales .col > div{
+        display: flex;
+        padding: 4px;
+        flex-direction: column;
+    }
+    .sales .col > div .text{
+        padding: 4px;
+        text-align: center;
+    }
+    .sales .col > div .text p{
+        font-size: 16px !important;
+        line-height: 22px;
+    }
+    .sales .col > div .text span{
+        font-size: 16px;
+        line-height: 16px;
+        margin: 10px 0;
+    }
+
+    .changeable-border{
+        width: 100% !important;
+        border-radius: 16px 16px 0 0;
+        -webkit-border-radius: 16px 16px 0 0;
+        -moz-border-radius: 16px 16px 0 0;
+        -ms-border-radius: 16px 16px 0 0;
+        -o-border-radius: 16px 16px 0 0;
+    }
+}
